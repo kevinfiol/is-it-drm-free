@@ -9,7 +9,7 @@
         const defaultValue = ettoContainer.getAttribute('input-value');
 
         const etto = new Etto(ettoContainer, {
-            inputAttributes: { name: 'game_name', placeholder: 'Search for DRM-free games' },
+            inputAttributes: { name: 'game_name', placeholder: 'Search for DRM-Free games' },
             requestDelay: 250,
             source: searchSource,
             maxResults: 15,

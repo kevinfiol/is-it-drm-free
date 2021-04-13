@@ -1,18 +1,24 @@
 # is it drm free
 
+Find DRM-Free games easier.
+
+## Run
+Create a copy of `.env.dev` and rename it to `.env` with Development environment variables.
 ```bash
 python -m venv venv
 
+# Linux
 source venv/bin/activate
-# or on windows
-# venv\Scripts\activate
+
+# Windows
+venv\Scripts\activate.bat
 
 pip install -r requirements.txt
 python app.py
 ```
 
-## Deploy
-Create a copy of `.env.defaults` and rename it `.env` with Production environment variables.
+## Build & Run with Docker
+Create a copy of `.env.prod` and rename it to `.env` with Production environment variables.
 ```bash
 # build image
 docker build -t drm .
