@@ -42,5 +42,5 @@
 %end
 
 <p>
-    <a href="https://isthereanydeal.com/search/?q={{ game_name }}">Search on IsThereAnyDeal.com</a>
+    <a target="_blank" href="https://isthereanydeal.com/search/?q={{ game_name }}">Search on IsThereAnyDeal.com</a>
 </p>

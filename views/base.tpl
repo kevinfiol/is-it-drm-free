@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/static/bamboo.min.css">
     <link rel="stylesheet" type="text/css" href="/static/main.css">
     <title>Is It DRM-Free?</title>
