@@ -41,8 +41,7 @@
 
                 controller = null;
                 const json = await response.json();
-                
-                console.log(json);
+
                 if (json.data && json.data.results) {
                     json.data.results.forEach(game => {
                         const gameTitle = game.title.replace(/[^\x00-\x7F]/g, '');
