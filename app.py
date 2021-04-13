@@ -30,7 +30,11 @@ def results():
     game_exists = True
     game_name = request.forms.get('game_name')
     plain_id = request.forms.get('plain_id')
+    game_title = game_name
     prices = []
+
+    if game_name.strip() == '':
+        redirect('/')
 
     if not plain_id:
         search_results = itad.search(game_name.strip())
@@ -39,6 +43,7 @@ def results():
             game_exists = False
         else:
             plain_id = search_results[0]['plain']
+            game_title = search_results[0]['title']
 
     if game_exists:
         res = itad.getPrices(plain_id)
@@ -47,6 +52,7 @@ def results():
     return template('results',
         game_exists=game_exists,
         game_name=game_name,
+        game_title=game_title,
         plain_id=plain_id,
         prices=prices
     )

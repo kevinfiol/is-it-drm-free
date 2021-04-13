@@ -9,7 +9,7 @@
         const defaultValue = ettoContainer.getAttribute('input-value');
 
         const etto = new Etto(ettoContainer, {
-            inputAttributes: { name: 'game_name', placeholder: 'Search for DRM-Free games' },
+            inputAttributes: { name: 'game_name', placeholder: 'Search for DRM-Free games', required: 'true' },
             requestDelay: 250,
             source: searchSource,
             maxResults: 15,
@@ -49,7 +49,7 @@
                             label: gameTitle,
                             value: gameTitle,
                             plain_id: game.plain
-                        })
+                        });
                     });
                 }
 

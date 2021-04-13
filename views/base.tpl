@@ -13,7 +13,7 @@
         <h1><a href="/">Is It DRM-Free?</a></h1>
         <form action="/results" method="POST" id="game-form">
             <noscript>
-                <input type="text" name="game_name" value="{{ game_name }}" placeholder="Search for DRM-Free games">
+                <input type="text" name="game_name" value="{{ game_name }}" placeholder="Search for DRM-Free games" required>
             </noscript>
 
             <div id="etto-container" input-value="{{ game_name }}"></div>

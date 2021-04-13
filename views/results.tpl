@@ -15,7 +15,7 @@
     %end
 
     <div class="result-subtitle">
-        <h2>{{ game_name.upper() + (' is available DRM-Free.' if isDrmFree else ' is NOT available DRM-Free.') }}</h2>
+        <h2>{{ game_title.upper() + (' is available DRM-Free.' if isDrmFree else ' is NOT available DRM-Free.') }}</h2>
         <a href="https://isthereanydeal.com/game/{{ plain_id }}">More info at IsThereAnyDeal.com</a>
     </div>
 
