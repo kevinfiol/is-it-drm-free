@@ -26,3 +26,6 @@ docker build -t drm .
 # run on specified ports `8080:80` where `80` must be defined in .env file
 docker run -p 8080:80 drm
 ```
+
+## To-do
+* ITAD has a lot of redundant search results. Instead of auto-directing to the top result, I think it'd be better to show a list of results (maybe top 5 or whatever). Kind of defeats the original idea, but would be more usable.
