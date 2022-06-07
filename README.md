@@ -2,6 +2,8 @@
 
 Find DRM-Free games easier. The main instance runs off a Raspberry Pi 4 in my office, so excuse any downtime.
 
+**If you like this, check out my userscript for Steam, [its-drm-free](https://github.com/kevinfiol/its-drm-free).**
+
 ## Run
 Create a copy of `.env.dev` and rename it to `.env` with Development environment variables.
 ```bash
